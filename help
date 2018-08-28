@@ -41,9 +41,10 @@ function display {
     echo -e "   $ jupyter notebook\n"
     echo -e "Using this environment"
     echo -e ""
-    echo -e "   $ conda create --name findingdonors python=2.7 -y"
-    echo -e "   $ conda install numpy pandas scikit-learn=0.17.1 matplotlib scipy=0.18.1 seaborn -y"
+    echo -e "   $ conda create --name findingdonors python=3.6 -y"
     echo -e "   $ source activate findingdonors"
+    echo -e "   $ conda install numpy pandas scikit-learn matplotlib seaborn -y"
+    echo -e "   $ conda install nb_conda"    
     echo -e ""
 }
 
