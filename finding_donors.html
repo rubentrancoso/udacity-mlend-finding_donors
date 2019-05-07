@@ -13456,8 +13456,12 @@ LogisticRegression
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><br>
-Logistic Regression for our purposes, works by predict how likely a person have a income of 50k or above given a new data point and output a class label according to a defined threshold.<br>
-It mainly do a mapping from all data points to a logistic function by combining all input values in a linear function with coeficientes and plugin it's result to a logarithmic function from which it calculates the coeficients to the linear function according to a cost/error function that is minimized to the linear equation.</p>
+Logistic Regression is a statistical method that despite its name is aimed do perform classification.</p>
+<p>While linear regression will give us a correlation betwen input data to an output value in a continuous and linear fashion, Logistic regression by it's turn will use linear regression output, and by pluging a sigmoid function will explain the correlation betwen input data to a binary outcome (or a classification label) by giving us a probability as output.</p>
+<p>Let's consider that we have a set of data from which we want to say if a person income is equal ou greater than $50k based on tha fact that we have some feature data like age, profession, level of education, mariage status and so on and as a dependent variable we have this person's actual salary.</p>
+<p>If we train a linear regression model we will find the correlation betwen the features and the salary in a way that we can predict someones salary based on their same particular features.</p>
+<p>For the logistic regression on it's turn, train it means to translate the same input values to an output label given by a value betwen 0 and 1 that represent the probability that this person have an incoming of $50k or more.</p>
+<p>Being more specific, our logistic model works by creating a boundary on each axis/feature considering how much it impact one person's income and giving us so the hability to predict if someone is more likely to be on the group of the target income we are trying to find.</p>
 <p>Binary logistic Regression Tutorial - Siraj Raval<br>
 <a href="https://www.youtube.com/watch?v=H6ii7NFdDeg">https://www.youtube.com/watch?v=H6ii7NFdDeg</a></p>
 <p>Lecture 6 — Logistic Regression | Classification - Machine Learning - Andrew Ng<br>
